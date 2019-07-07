@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InterCorpUser</string>
+    <string name="age_label">Edad:</string>
+    <string name="birthdate_label">Fecha de Nacimiento:</string>
+    <string name="close_session_button">CERRAR SESION</string>
+    <string name="create_new_user">Creación de Cliente</string>
+    <string name="create_user">Crear Cliente</string>
+    <string name="error_no_connection">Sin Conexión</string>
+    <string name="error_unknown">Error Desconocido</string>
+    <string name="last_name_label">Apellido:</string>
+    <string name="login_cancelled">Logueo cancelado...</string>
+    <string name="name_label">Nombre:</string>
+    <string name="save_changes">Guardar Cambios</string>
+</resources>

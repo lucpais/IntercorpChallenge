@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">InterCorpUser</string>
+    <string name="facebook_application_id">449966905584259</string>
+    <string name="fb_login_protocol_scheme">fb449966905584259</string>
+    <string name="login_cancelled">Login was cancelled...</string>
+    <string name="close_session_button">CLOSE SESSION</string>
+    <string name="error_no_connection">No Connection</string>
+    <string name="error_unknown">Unknown Error</string>
+    <string name="create_new_user">Create New Client</string>
+    <string name="name_label">Name:</string>
+    <string name="last_name_label">Last name:</string>
+    <string name="age_label">Age:</string>
+    <string name="birthdate_label">Birthdate:</string>
+    <string name="age_hint">32</string>
+    <string name="last_name_hint">Doe</string>
+    <string name="name_hint">John</string>
+    <string name="birthdate_hint">01/25/1983</string>
+    <string name="create_user">Create User</string>
+    <string name="save_changes">Save Changes</string>
+</resources>

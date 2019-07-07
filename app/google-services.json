@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "482134601907",
+    "firebase_url": "https://intercorpuser.firebaseio.com",
+    "project_id": "intercorpuser",
+    "storage_bucket": "intercorpuser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482134601907:android:59309462f5749bbe",
+        "android_client_info": {
+          "package_name": "com.crew.lucas.intercorpuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482134601907-urqv4748lvjeq3rgb79nuduo6ic33cd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crew.lucas.intercorpuser",
+            "certificate_hash": "604a3bfbc27ed596b1830edd815de0a0743cd6a1"
+          }
+        },
+        {
+          "client_id": "482134601907-bdhouvr9cq58dig35hnrqtjfbj98mckt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3GRETkvf4fv0nfP4orpUlx1sBJ7AlIDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482134601907-bdhouvr9cq58dig35hnrqtjfbj98mckt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
