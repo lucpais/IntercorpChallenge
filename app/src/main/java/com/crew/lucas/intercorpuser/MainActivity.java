@@ -6,13 +6,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,13 +34,14 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseUser mFBUser;
     private DatabaseReference mUsersDatabaseReference;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         mUsersDatabaseReference = FirebaseDatabase.getInstance().getReference().child("users");
-
+        mUsersDatabaseReference.addChildEventListener(mUsersListener);
         mFBUser = FirebaseAuth.getInstance().getCurrentUser();
         if (mFBUser != null) {
             mAgeEditText = findViewById(R.id.age_label_et);
@@ -99,4 +103,31 @@ public class MainActivity extends AppCompatActivity {
                 mBirthdateEditText.getText().toString());
         mUsersDatabaseReference.child(mFBUser.getUid()).setValue(userReady);
     }
+
+    private ChildEventListener mUsersListener = new ChildEventListener() {
+        @Override
+        public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+            //Toast.makeText(getApplicationContext(), R.string.new_user_added, Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+            Toast.makeText(getApplicationContext(), R.string.user_modified, Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+            //User remove implementation
+        }
+
+        @Override
+        public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+        }
+
+        @Override
+        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+        }
+    };
 }

@@ -17,4 +17,6 @@
     <string name="birthdate_hint">01/25/1983</string>
     <string name="create_user">Create User</string>
     <string name="save_changes">Save Changes</string>
+    <string name="new_user_added">A new user was added</string>
+    <string name="user_modified">User was modified</string>
 </resources>
