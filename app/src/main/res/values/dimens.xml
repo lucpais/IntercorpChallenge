@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="title_size">40sp</dimen>
-    <dimen name="info_size">30sp</dimen>
+    <dimen name="title_size">30sp</dimen>
+    <dimen name="info_size">25sp</dimen>
+    <dimen name="padding_button">10dp</dimen>
 </resources>
